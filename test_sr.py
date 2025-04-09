@@ -32,7 +32,7 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--folder', type=str, default='/home/lisiqi/data/DeOccDepthEstimation(DODE)/')
+    parser.add_argument('--folder', type=str, default='/lisiqi/EOccSR/')
     parser.add_argument('--arg', type=bool, default=True)
     parser.add_argument('--device', type=str, default='cuda')
     parser.add_argument('--ckpt', type=str, default='./checkpoint_main.pth')

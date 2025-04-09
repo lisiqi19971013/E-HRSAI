@@ -301,7 +301,7 @@ class EOccSR_dataset(data.Dataset):
 
         gt_x4 = transforms.ToTensor()(Image.open(os.path.join(self.folder[idx], 'gt_kinect_x4_cvt.png')))
 
-        data = np.load(os.path.join(self.folder[idx], 'data', 'flow.npy'))
+        data = np.load(os.path.join(self.folder[idx], 'flow.npy'))
         data = torch.from_numpy(data)
         event01 = data[9:9+5, ...]
         event21 = data[9+5:, ...]
