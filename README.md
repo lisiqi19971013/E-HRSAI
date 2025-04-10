@@ -30,10 +30,9 @@ The source code of our **Information Fusion 2025** paper *"High-Resolution Synth
 1. Run the following code to generate HR SAI results.
 
    ```shell
->>> python eval.py --folder "dataset folder" --ckpt "checkpoint path" --opFolder "opFolder"
+   >>> python eval.py --folder "dataset folder" --ckpt "checkpoint path" --opFolder "opFolder"
    ```
 
-   
    Then, the outputs will be saved in "opFolder".
    
 2. Calculate metrics using the following code.
