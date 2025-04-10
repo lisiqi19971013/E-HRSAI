@@ -32,12 +32,11 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--folder', type=str, default='/lisiqi/EOccSR/')
+    parser.add_argument('--folder', type=str, default='./data')
     parser.add_argument('--arg', type=bool, default=True)
     parser.add_argument('--device', type=str, default='cuda')
     parser.add_argument('--ckpt', type=str, default='./checkpoint_main.pth')
     parser.add_argument('--opFolder', type=str, default='./output_main')
-    # /home/lisiqi/code/E-OccSR-New/log_sr/2023-03-16/bs4_rate4_(our_dataset_split_by_occlusions)/checkpoint_max_psnr.pth
 
     args = parser.parse_args()
 

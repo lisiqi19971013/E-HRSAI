@@ -3,15 +3,22 @@ import os
 import shutil
 import cv2
 from sympy.core.random import shuffle
+import argparse
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 from ultralytics import YOLO
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--ipFolder", type=str, default='../output_main')
+parser.add_argument("--opFolder", type=str, default='../detect_result')
+parser.add_argument("--ckptPath", type=str, default='./yolov8x.pt')
+args = parser.parse_args()
 
-model = YOLO('/home/lisiqi/code/E-OccSR-New/yolov8x.pt')
+model = YOLO(args.ckptPath)
 
-input_folder = '../output_main'
-opFolder = '../detect_result'
+input_folder = args.ipFolder
+opFolder = args.opFolder
+
 os.makedirs(opFolder, exist_ok=True)
 
 img_list = glob.glob(os.path.join(input_folder, '*_output.png'))

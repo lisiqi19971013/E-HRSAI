@@ -4,6 +4,7 @@ import os
 import cv2
 from skimage.metrics import structural_similarity
 from skimage.metrics import peak_signal_noise_ratio
+import argparse
 
 
 def calpsnr(gt, pred):
@@ -14,9 +15,14 @@ def calssim(gt, pred):
     return structural_similarity(gt, pred, channel_axis=2, gaussian_weights=True)
 
 
-path = "./output_main"
+parser = argparse.ArgumentParser()
+parser.add_argument("--opFolder", type=str, default='./output_main')
+parser.add_argument("--dataFolder", type=str, default='./data')
+args = parser.parse_args()
 
-file = '/home/lisiqi/data/DeOccDepthEstimation(DODE)/test.txt'
+path = args.opFolder
+
+file = os.path.join(args.dataFolder, 'test.txt')
 
 with open(file, 'r') as f:
     lines = f.readlines()
