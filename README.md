@@ -1,4 +1,4 @@
-# E-HRSAI
+# High-Resolution Synthetic Aperture Imaging Method and Benchmark Based on Event-Frame Fusion
 
 The source code of our **Information Fusion 2025** paper *"High-Resolution Synthetic Aperture Imaging Method and Benchmark Based on Event-Frame Fusion"*.
 
@@ -21,7 +21,7 @@ The source code of our **Information Fusion 2025** paper *"High-Resolution Synth
 
 1. Our $\text{THU}^\text{E-HRSAI}$ dataset could be downloaded from https://github.com/lisiqi19971013/event-based-datasets. 
 
-2. Download the pre-trained model from https://drive.google.com/file/d/1Gx0zhIeciHGEqrRryPmAC-mqoNO1wuMQ/view?usp=sharing or from https://pan.baidu.com/s/1ONvkUyk2cqWM2XR_XwaKeg (extract code: 2024).
+2. Download the pre-trained model from https://cloud.tsinghua.edu.cn/f/af7544cbb0ef46959c8d/?dl=1.
 
    
 
