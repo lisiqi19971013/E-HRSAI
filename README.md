@@ -62,7 +62,7 @@ The source code of our **Information Fusion 2025** paper *"High-Resolution Synth
     journal={Information Fusion}, 
     volume={},
     number={},
-    pages={},
+    pages={103211},
     year={2025},
 }
 ```
